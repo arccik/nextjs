@@ -6,7 +6,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background: url("/static/background.png");
   background-repeat: no-repeat;
-  background-size: 10%;
+  background-size: 1 0%;
   background-size: cover;
 }
 
@@ -17,6 +17,26 @@ a {
 
 * {
   box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+hr {
+  margin: 0;
+}
+button {
+  background-color: transparent;
+  background-image: none;
+  font-weight: 600;
+}
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 :root {

@@ -17,12 +17,10 @@ const CoffeeStore = (props) => {
     console.log("Handle Vote");
   };
   return (
-    <div classNameName={styles.layout}>
+    <div className={styles.layout}>
       <Head>
         <title>{name}</title>
       </Head>
-      {/*START check this  */}
-
       <div className={styles.wrapper}>
         <div className={styles.container}>
           <div className={styles.linkWrapper}>
@@ -53,7 +51,6 @@ const CoffeeStore = (props) => {
           </div>
         </div>
       </div>
-      {/*END  check this */}
     </div>
   );
 };

@@ -5,9 +5,22 @@ import Card from "../components/card/Card";
 import coffeeStoresData from "../data/coffee-stores.json";
 
 export async function getStaticProps(context) {
+  const options = {
+    method: "GET",
+    headers: {
+      Accept: "application/json",
+      Authorization: process.env.API_KEY,
+    },
+  };
+  const response = await fetch(
+    "https://api.foursquare.com/v3/places/search?query=coffee&near=London&limit=6",
+    options
+  );
+  const data = await response.json();
+  console.log(data);
   return {
     props: {
-      coffeeStores: coffeeStoresData,
+      coffeeStores: data.results,
     },
   };
 }
@@ -36,9 +49,12 @@ export default function Home(props) {
             <div className={styles.cardLayout}>
               {props.coffeeStores.map((store, i) => (
                 <Card
-                  key={store.id}
+                  key={store.fsq_id}
                   name={store.name}
-                  imgUrl={store.imgUrl}
+                  imgUrl={
+                    store.imgUrl ||
+                    "https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
+                  }
                   href={`/coffee-store/${store.id}`}
                   className={styles.card}
                 />

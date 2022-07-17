@@ -39,12 +39,10 @@ const Coctails = (props) => {
   if (router.isFallback) {
     return <div>Loading...</div>;
   }
-  const { id } = router.query;
   return (
     <div>
       <Link href="/">Back to home </Link>
       <h1>Coctails</h1>
-      {/* <p>{JSON.stringify(props.coctails.drinks)}</p> */}
       {props.coctails.drinks.map((drink) => (
         <div className={styles.card} key={drink.idDrink}>
           <Image

@@ -1,0 +1,131 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.linkWrapper {
+  display: block;
+  background-color: white;
+  height: 5rem;
+  padding: 10px;
+  border-radius: 16px 16px 0 0;
+}
+.card {
+  width: 300px;
+  min-height: 528px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 4%);
+}
+
+.main {
+  padding: 34px 24px 30px 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.spanHead {
+  font-family: "DM Serif Display", serif;
+  font-size: 24px;
+  font-weight: 100;
+  color: #081f32;
+}
+.redFire {
+  width: 20px;
+  height: 20px;
+  background-color: #f8593b;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+}
+.redFire:hover {
+  background-color: red;
+  color: grey;
+}
+.yellowWheat {
+  width: 20px;
+  height: 20px;
+  background-color: #ffc22b;
+  padding: 5px;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  border-radius: 50%;
+}
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.aboutFood {
+  margin-top: 23px;
+}
+.pLight {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 25px;
+  color: #6e798c;
+}
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.spanLight {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #a5adbb;
+  margin-bottom: 2rem;
+}
+.spanBold {
+  font-family: "DM Serif Display", serif;
+  font-size: 28px;
+  font-weight: 100;
+  color: #081f32;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 33px;
+}
+
+.btn button {
+  /* padding: 17px 29px; */
+  width: 114px;
+  height: 44px;
+  background-color: #2ecc71;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+.btn button:hover {
+  background-color: var(--text-purple);
+}
+.price {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.spanRed {
+  font-family: "DM Serif Display", serif;
+  font-weight: 100;
+  font-size: 20px;
+  color: #f8593b;
+}
